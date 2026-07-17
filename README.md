@@ -1,4 +1,4 @@
-# 🗳️ Voting System API
+#  Voting System API
 
 API RESTful desarrollada con **FastAPI** para gestionar un sistema de votaciones. Permite registrar votantes y candidatos, emitir votos garantizando que cada votante vote una única vez y generar estadísticas con una gráfica de los resultados utilizando **Pandas** y **Matplotlib**.
 
@@ -17,7 +17,7 @@ API RESTful desarrollada con **FastAPI** para gestionar un sistema de votaciones
 
 ---
 
-# 📂 Arquitectura del proyecto
+#  Arquitectura del proyecto
 
 El proyecto está organizado siguiendo una arquitectura por capas para separar responsabilidades y facilitar el mantenimiento del código.
 
@@ -56,7 +56,7 @@ Exponen los endpoints de la API y delegan el procesamiento a los servicios.
 
 ---
 
-# ⚙️ Instalación
+#  Instalación
 
 ## 1. Clonar el repositorio
 
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🗄️ Configuración de MySQL
+#  Configuración de MySQL
 
 Crear una base de datos.
 
@@ -113,7 +113,7 @@ DB_PASSWORD=tu_contraseña
 
 ---
 
-# ▶ Ejecutar el proyecto
+#  Ejecutar el proyecto
 
 ```bash
 uvicorn app.main:app --reload
@@ -181,6 +181,34 @@ POST /voters
     "email": "juan@gmail.com"
 }
 ```
+```json
+
+{
+  "name": "Pedro López",
+  "email": "pedro2@gmail.com"
+}
+
+```
+```json
+{
+  "name": "Ana Martínez",
+  "email": "ana3@gmail.com"
+}
+```
+```json
+{
+  "name": "Camilo Ruiz",
+  "email": "camilo4@gmail.com"
+}
+```
+```json
+{
+  "name": "Luisa Díaz",
+  "email": "luisa5@gmail.com"
+}
+```
+
+
 
 ---
 
@@ -193,6 +221,13 @@ POST /candidates
     "name": "Carlos Pérez",
     "party": "Partido Verde"
 }
+```
+```json
+{
+  "name": "Laura Gómez",
+  "party": "Movimiento Ciudadano"
+}
+
 ```
 
 ---
@@ -207,10 +242,35 @@ POST /votes
     "candidate_id": 1
 }
 ```
+```json
+{
+    "voter_id": 2,
+    "candidate_id": 1
+}
+```
+
+```json
+{
+    "voter_id": 3,
+    "candidate_id": 1
+}
+```
+```json
+{
+    "voter_id": 4,
+    "candidate_id": 2
+}
+```
+```json
+{
+    "voter_id": 5,
+    "candidate_id": 2
+}
+```
 
 ---
 
-# 📊 Estadísticas
+#  Estadísticas
 
 El endpoint
 
@@ -281,7 +341,7 @@ Ejemplo de respuesta:
 
 ---
 
-# ✅ Validaciones implementadas
+#  Validaciones implementadas
 
 - Un votante no puede votar más de una vez.
 - No se permite registrar dos votantes con el mismo correo electrónico.
@@ -292,7 +352,7 @@ Ejemplo de respuesta:
 
 ---
 
-# 👨‍💻 Autor
+#  Autor
 
 Juan José Salazar Aristizábal
 
