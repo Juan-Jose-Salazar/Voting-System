@@ -61,7 +61,7 @@ Exponen los endpoints de la API y delegan el procesamiento a los servicios.
 ## 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/voting-system-api.git
+git clone https://github.com/Juan-Jose-Salazar/Voting-System.git
 
 cd voting-system-api
 ```
@@ -81,15 +81,6 @@ Activarlo
 ```bash
 venv\Scripts\activate
 ```
-
-Linux / Mac
-
-```bash
-python3 -m venv venv
-
-source venv/bin/activate
-```
-
 ---
 
 ## 3. Instalar dependencias
@@ -264,9 +255,9 @@ Ejemplo de respuesta:
 
 
 
-```
+
 ![Swagger](docs/swagger.png)
-```
+
 
 ---
 
@@ -274,9 +265,9 @@ Ejemplo de respuesta:
 
 
 
-```
+
 ![Statistics](docs/statistics.png)
-```
+
 
 ---
 
@@ -284,9 +275,9 @@ Ejemplo de respuesta:
 
 
 
-```
+
 ![Voting Chart](docs/chart.png)
-```
+
 
 ---
 
